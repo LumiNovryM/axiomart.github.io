@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --bg-primary  : #FFF;
+    --bg-gradient : linear-gradient(to bottom right,#E3E0FF,#FFF);
+    --blur : url('../assets/background-blur.png');
+    --heading-family : 'Poppins', sans-serif;
+    --heading-weight : 700;
+    --heading-color : #211C70;
+    --para-family : 'Poppins', sans-serif;
+    --para-weight : 400;
+    --para-color : #6B67AA;
+    --input-border : 0.5px solid #6B67AA;
+    --btn-color : #6B67AA;
+    --btn-font-color : #FFF;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: var(--bg-gradient);
+    background-image: var(--blur);
+    background-position: center;
+    background-position-x: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-register, #form-login{
+    transition: all 0.3s ease-in-out;
+}
+
+.login-form{
+    display: none;
+    background-color: var(--bg-primary);
+    background-image: var(--bg-gradient);
+    height: 80vh;
+    width: 30vw;
+    padding: 10px;
+    border-radius: 25px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.login-form .logo {
+    height: 13vh;
+}
+
+.login-form .heading{
+    font-family: var(--heading-family);
+    font-weight: var(--heading-weight);
+    color: var(--heading-color);
+}
+
+.login-form .para{
+    font-family: var(--para-family);
+    font-weight: var(--para-weight);
+    text-align: center;
+    color: var(--para-color);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 28vw;
+    height: 50vh;
+}
+
+.input .username, .password{
+    position: relative;
+    height: 60px;
+}
+
+.username input, .password input{
+    padding: 15px 25px;
+    width: 21.5vw;
+    border-radius: 8px;
+    border: var(--input-border);
+    outline: none;
+    color: var(--para-color);
+    font-family: var(--para-family);
+    font-weight: var(--para-weight);
+}
+
+.username input::placeholder, .password input::placeholder{
+    font-family: var(--para-family);
+    font-weight: var(--para-weight);
+}
+
+.password #validatorRegist, .password  #validatorLogin{
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    color: var(--para-color);
+    font-family: var(--para-family);
+}
+
+.login-form button {
+    padding: 15px 25px;
+    width: 25.5vw;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: var(--btn-font-color);
+    background-color: var(--btn-color);
+    font-family: var(--heading-family);
+    font-weight: var(--heading-weight);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login-form .alert{
+    position: absolute;
+    bottom: 65px;
+    font-family: var(--para-family);
+    font-size: 15px;
+    color: var(--para-color);
+    font-size: 13px;
+}
+
+.login-form .alert span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.register-form{
+    background-color: var(--bg-primary);
+    background-image: var(--bg-gradient);
+    height: 80vh;
+    width: 30vw;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.register-form .logo {
+    height: 13vh;
+}
+
+.register-form .heading{
+    font-family: var(--heading-family);
+    font-weight: var(--heading-weight);
+    color: var(--heading-color);
+}
+
+.register-form .para{
+    font-family: var(--para-family);
+    font-weight: var(--para-weight);
+    text-align: center;
+    color: var(--para-color);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 28vw;
+    height: 30vh;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.input .username, .password{
+    padding: 15px;
+}
+
+.username input, .password input{
+    padding: 15px 25px;
+    width: 21.5vw;
+    border-radius: 8px;
+    border: var(--input-border);
+    outline: none;
+    color: var(--para-color);
+    font-family: var(--para-family);
+    font-weight: var(--para-weight);
+}
+
+.username input::placeholder, .password input::placeholder{
+    font-family: var(--para-family);
+    font-weight: var(--para-weight);
+}
+
+.register-form button {
+    padding: 15px 25px;
+    width: 25.5vw;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: var(--btn-font-color);
+    background-color: var(--btn-color);
+    font-family: var(--heading-family);
+    font-weight: var(--heading-weight);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.register-form .alert{
+    position: absolute;
+    bottom: 65px;
+    font-family: var(--para-family);
+    font-size: 15px;
+    color: var(--para-color);
+    font-size: 13px;
+}
+
+.register-form .alert span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#login, #register {
+    cursor: pointer;
+}

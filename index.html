@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favico/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favico/favicon_io/favicon-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favico/favicon_io/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favico/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favico/favicon_io/favicon-16x16.png">
+    <link rel="icon" href="favico/favicon_io/favicon.ico">
+    <link rel="manifest" href="favico/favicon_io/site.webmanifest">
+    <title>Axio-Mart</title>
+</head>
+<body>
+    
+    <!-- Container Start -->
+    <div class="container">
+        
+        <!-- Register Form Start -->
+        <div class="register-form" id="form-register">
+            <img src="assets/logo.png" alt="Adora-Mart" class="logo">
+            <h1 class="heading">Register</h1>
+            <p class="para">Hey, Enter your details to get sign in to your account</p>
+            <div class="input">
+                <div class="username">
+                    <input type="text" placeholder="Username" autocomplete="off" id="registUser">
+                </div>
+                <div class="password">
+                    <input type="password" name="" id="registPass" placeholder="Password">
+                    <p id="validatorRegist"></p>
+                </div>
+            </div>
+            <button id="registButton">Register</button>
+            <p class="alert">Already have account? <span id="login">login</span> now</p>
+        </div>
+        <!-- Register Form End -->
+
+        <!-- Login Form Start -->
+        <div class="login-form" id="form-login">
+            <img src="assets/logo.png" alt="Adora-Mart" class="logo">
+            <h1 class="heading">Login</h1>
+            <p class="para">Hey, Enter your details to get sign in to your account</p>
+            <div class="input">
+                <div class="username">
+                    <input type="text" placeholder="Username" id="loginUser">
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="Password" id="loginPass">
+                    <p id="validatorLogin"></p>
+                </div>
+            </div>
+            <button id="loginButton">Login</button>
+            <p class="alert">Don't have an account yet? <span id="register">Register</span> Now</p>
+        </div>
+        <!-- Login Form End -->
+</div>
+    <!-- Container End -->
+
+    <!-- Script Start -->
+    <script src="script/script.js"></script>
+    <!-- Script End -->
+</body>
+</html>
